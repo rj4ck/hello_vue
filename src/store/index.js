@@ -9,6 +9,11 @@ export default new Vuex.Store({
   mutations: {
   },
   actions: {
+    FB_Parse () {
+      setTimeout(() => {
+        window.FB.XFBML.parse()
+      }, 0)
+    }
   },
   modules: {
   }

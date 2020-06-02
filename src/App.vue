@@ -20,22 +20,10 @@
 
     <router-view/>
 
+    <div id="fb-root"></div>
+
   </div>
 </template>
-
-<script>
-  // @ is an alias to /src
-  import Header from '@/components/Header.vue'
-  import NavBar from '@/components/NavBar.vue'
-  import HelloWorld from '@/components/HelloWorld.vue'
-
-  export default {
-    name: 'Home',
-    components: {
-      NavBar
-    }
-  }
-</script>
 
 <style lang="scss">
 #app {
