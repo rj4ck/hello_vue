@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
+  <div id="home">
     <Header />
+
     <Products />
 
-    <Comments />
+    <About />
 
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Testimonial />
 
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat"
@@ -15,23 +15,32 @@
          theme_color="#e68585">
     </div>
 
+    <Footer />
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" id="back-to-top">
+      <i class="mdi mdi-chevron-up"/>
+    </a>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 import Products from './Products.vue'
-import Comments from './Comments.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
+import About from './About.vue'
+import Testimonial from './Testimonial.vue'
 
 export default {
   name: 'Home',
   components: {
+    About,
     Header,
     Products,
-    Comments,
-    HelloWorld
+    Testimonial,
+    Footer
   },
   mounted () {
     window.fbAsyncInit = function () {
@@ -42,7 +51,7 @@ export default {
     }
   },
   created () {
-    //this.$store.dispatch("FB_Parse")
+    // this.$store.dispatch("FB_Parse")
   }
 }
 </script>

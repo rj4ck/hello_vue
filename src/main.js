@@ -5,7 +5,9 @@ import './plugins/bootstrap-vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import './assets/scss/app.scss'
+
+import './design/style.scss'
+import './assets/css/materialdesignicons.min.css'
 
 Vue.config.productionTip = false
 

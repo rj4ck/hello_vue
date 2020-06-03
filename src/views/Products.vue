@@ -1,72 +1,94 @@
 <template>
-  <div>
-    <b-jumbotron header="Productos"  header-tag="h6"/>
+  <section class="section product bg-light" id="products">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="title text-center mb-3">
+            <h2 class="font-">Productos</h2>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
 
-    <b-card-group columns>
-      <b-card
-          title="Card title that wraps to a new line"
-          img-src="https://placekitten.com/g/400/450"
-          img-alt="Image"
-          img-top
-      >
-        <b-card-text>
-          This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.
-        </b-card-text>
-      </b-card>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="demo-box bg-white mt-4 p-2">
+            <a href="#" class="text-dark">
+              <img src="images/demo/index_1.jpg" alt="" class="img-fluid mx-auto d-block">
+              <div class="p-3 text-center">
+                <h5 class="mb-0">light Layouts</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- end col -->
+        <div class="col-lg-4 col-md-6">
+          <div class="demo-box bg-white mt-4 p-2">
+            <a href="#" class="text-dark">
+              <img src="images/demo/index_2.jpg" alt="" class="img-fluid mx-auto d-block">
+              <div class="p-3 text-center">
+                <h5 class="mb-0">Dark Layouts</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- end col -->
+        <div class="col-lg-4 col-md-6">
+          <div class="demo-box bg-white mt-4 p-2">
+            <a href="#" class="text-dark">
+              <img src="images/demo/index_3.jpg" alt="" class="img-fluid mx-auto d-block">
+              <div class="p-3 text-center">
+                <h5 class="mb-0">Material Design </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- end col -->
+        <div class="col-lg-4 col-md-6">
+          <div class="demo-box bg-white mt-4 p-2">
+            <a href="#" class="text-dark">
+              <img src="images/demo/index_4.jpg" alt="" class="img-fluid mx-auto d-block">
+              <div class="p-3 text-center">
+                <h5 class="mb-0">Purple Layouts</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- end col -->
+        <div class="col-lg-4 col-md-6">
+          <div class="demo-box bg-white mt-4 p-2">
+            <a href="#" class="text-dark">
+              <img src="images/demo/index_5.jpg" alt="" class="img-fluid mx-auto d-block">
+              <div class="p-3 text-center">
+                <h5 class="mb-0">Boxed Layouts</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- end col -->
+        <div class="col-lg-4 col-md-6">
+          <div class="demo-box bg-white mt-4 p-2">
+            <a href="#" class="text-dark">
+              <img src="images/demo/index_6.jpg" alt="" class="img-fluid mx-auto d-block">
+              <div class="p-3 text-center">
+                <h5 class="mb-0">Horizontal </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
 
-      <b-card header="Quote">
-        <blockquote class="blockquote mb-0">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </b-card>
-
-      <b-card title="Title" img-src="https://placekitten.com/500/350" img-alt="Image" img-top>
-        <b-card-text>
-          This card has supporting text below as a natural lead-in to additional content.
-        </b-card-text>
-        <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
-      </b-card>
-
-      <b-card bg-variant="primary" text-variant="white">
-        <blockquote class="card-blockquote">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>
-            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-          </footer>
-        </blockquote>
-      </b-card>
-
-      <b-card>
-        <b-card-title>Title</b-card-title>
-        <b-card-text>
-          This card has supporting text below as a natural lead-in to additional content.
-        </b-card-text>
-        <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
-      </b-card>
-
-      <b-card img-src="https://picsum.photos/400/400/?image=41" img-alt="Image" overlay></b-card>
-
-      <b-card img-src="https://picsum.photos/400/200/?image=41" img-alt="Image" img-top>
-        <b-card-text>
-          This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first.
-        </b-card-text>
-        <template v-slot:footer>
-          <small class="text-muted">Footer Text</small>
-        </template>
-      </b-card>
-    </b-card-group>
-  </div>
+      <!-- end row -->
+    </div> <!-- end container-fluid -->
+  </section>
 </template>
 
 <script>
-  export default {
-    name: 'Products'
-  }
+export default {
+  name: 'Products'
+}
 </script>
 
 <style scoped>
